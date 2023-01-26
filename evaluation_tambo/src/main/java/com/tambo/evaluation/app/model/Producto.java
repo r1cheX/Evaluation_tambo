@@ -23,7 +23,7 @@ public class Producto implements  Serializable {
 
     private Double costo;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Proveedor proveedor;
 
     private Integer estado;

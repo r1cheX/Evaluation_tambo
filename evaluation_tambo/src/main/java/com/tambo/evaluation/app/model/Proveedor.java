@@ -19,7 +19,7 @@ public class Proveedor implements  Serializable {
 
     private Integer estado;
 
-    @OneToMany(mappedBy = "proveedor", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "proveedor")
     private List<Producto> productos;
 
     public Long getId() {
